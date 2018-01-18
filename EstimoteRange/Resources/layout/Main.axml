@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/unknownPanel"
+        android:background="#ff004d40">
+        <TextView
+            android:text="I have no clue where you are"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="24sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/roomPanel"
+        android:background="#ffe57373"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/roomLabel"
+            android:text="Living Room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rssi1"
+            android:layout_below="@+id/roomLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="RSSI: 0 db" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rssi2"
+            android:layout_below="@+id/rssi1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="RSSI: 0 db" />
+    </RelativeLayout>
+</RelativeLayout>
